@@ -57,6 +57,10 @@ gem 'kaminari'
 # Logging in production
 gem 'syslogger', '~> 1.6.0'
 
+group :production do
+  gem 'rails_12factor'
+end
+
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
   gem 'awesome_print'
@@ -86,3 +90,5 @@ group :developement do
   gem 'guard'
   gem 'guard-rspec'
 end
+
+ruby "2.2.3"
